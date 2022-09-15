@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const initialStateValue = {
-  color: 0,
+  color: "",
 }
 
 export const themeSlice = createSlice({
@@ -10,7 +10,7 @@ export const themeSlice = createSlice({
   initialState: initialStateValue,
   reducers: {
     changeTextColor: (state, action) => {
-      state.color += action.payload
+      state.color = action.payload
     },
 
   

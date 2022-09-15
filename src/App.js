@@ -13,6 +13,7 @@ function App() {
       
    <Counter></Counter>
    <Theme></Theme>
+   <Coin></Coin>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { decrement, increment, incrementByAmount } from './counterSlice';
 
 export default function Counter() {
    const count = useSelector((state)=> state.counter.count)
-
+   const themeTextColor = useSelector((state)=> state.theme.color)
    const dispatch = useDispatch();
 
   return (
@@ -16,7 +16,7 @@ export default function Counter() {
       <button className='button' onClick={()=> { dispatch(decrement()) }}> - </button>
   
     
-      <button className='button' style={{ width:"60%"}} onClick={()=> { dispatch(incrementByAmount(10)) }}>  Increment 10 </button>
+      <button className='button' style={{ width:"60%" , borderColor:themeTextColor, borderSize:"2px", borderStyle:"solid"   }} onClick={()=> { dispatch(incrementByAmount(10)) }}>  Increment 10 </button>
     </div>
   )
 }
