@@ -1,7 +1,7 @@
    
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment } from './counterSlice';
-import coin from '../coin/Coin'
+import { decrement, increment, incrementByAmount } from './counterSlice';
+
 
 export default function Counter() {
    const count = useSelector((state)=> state.counter.count)
@@ -14,8 +14,9 @@ export default function Counter() {
       <span className='value'>{count}</span>
 
       <button className='button' onClick={()=> { dispatch(decrement()) }}> - </button>
-      <div>{coin}</div>
+  
     
+      <button className='button' style={{ width:"60%"}} onClick={()=> { dispatch(incrementByAmount(10)) }}>  Increment 10 </button>
     </div>
   )
 }

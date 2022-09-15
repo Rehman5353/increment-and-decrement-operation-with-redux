@@ -2,6 +2,7 @@
 import './App.css';
 import Counter from './features/counter/Counter'
 import Coin from './features/coin/Coin'
+import Theme from './features/Theme/Theme';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       
    <Counter></Counter>
-   <Coin></Coin> 
+   <Theme></Theme>
     </div>
   );
 }

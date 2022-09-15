@@ -13,7 +13,20 @@ margin-right: auto;
 button {
 margin: 12px 12px;
 width: 120px;
+padding: 10px 12px;
 font-size: 32px;
+}
+.button-theme {
+margin: 12px 12px;
+width: 320px;
+padding: 10px 12px;
+font-size: 32px;
+}
+.textBox {
+  width: 100%;
+  height: 40px;
+margin-top: 42px;
+  border: 2px solid rgb(80, 75, 75);
 }
 
 span {
